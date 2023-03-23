@@ -34,7 +34,7 @@ struct OnboardingView: View {
                 Spacer()
                 Text("Worlds Largest Digital Market Place (NFT)")
                     .multilineTextAlignment(.center)
-                    .font(.audiowide)
+                    .font(.audiowide(size: 36))
                     .foregroundColor(.white)
                     .padding(.horizontal, 36)
                     .padding(.bottom, 84)
@@ -43,7 +43,7 @@ struct OnboardingView: View {
                     print("login in")
                 } label: {
                     Text("Let Explore.")
-                        .fontWeight(.medium)
+                        .font(.robotoMedium(size: 18))
                         .foregroundColor(.white)
                         .padding(.vertical, 12)
                         .frame(width: 267)

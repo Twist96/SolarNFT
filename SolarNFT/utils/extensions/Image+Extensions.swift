@@ -9,6 +9,26 @@ import SwiftUI
 
 extension Image {
     static var onboardingBackground: Image {
-        Image("onboarding")
+        Image("Onboarding")
+    }
+
+    static var search: Image {
+        Image("Search")
+    }
+
+    static var profile: Image {
+        Image("Profile")
+    }
+
+    static var plus: Image {
+        Image("Plus")
+    }
+
+    static var home: Image {
+        Image("Home")
+    }
+
+    static var discovery: Image {
+        Image("Discovery")
     }
 }

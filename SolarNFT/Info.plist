@@ -5,6 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Audiowide-Regular.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-Medium.ttf</string>
 	</array>
 </dict>
 </plist>

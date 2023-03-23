@@ -15,6 +15,10 @@
 		E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254741C29CCABDE00E74975 /* Image+Extensions.swift */; };
 		E254742029CCB18900E74975 /* Audiowide-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254741F29CCB18900E74975 /* Audiowide-Regular.ttf */; };
 		E254742329CCB2E500E74975 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742229CCB2E500E74975 /* Font+Extensions.swift */; };
+		E254742529CCB98000E74975 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254742429CCB98000E74975 /* Roboto-Regular.ttf */; };
+		E254742729CCD09500E74975 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254742629CCD09500E74975 /* Roboto-Medium.ttf */; };
+		E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742929CCD21200E74975 /* NavigationBar.swift */; };
+		E254742C29CCD27000E74975 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742B29CCD27000E74975 /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E254741F29CCB18900E74975 /* Audiowide-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audiowide-Regular.ttf"; sourceTree = "<group>"; };
 		E254742129CCB23800E74975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E254742229CCB2E500E74975 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		E254742429CCB98000E74975 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		E254742629CCD09500E74975 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		E254742929CCD21200E74975 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		E254742B29CCD27000E74975 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 				E254741A29CCABBE00E74975 /* utils */,
 				E254741729CCAAA000E74975 /* Screens */,
 				E254740929CCAA7000E74975 /* SolarNFTApp.swift */,
+				E254742829CCD1CC00E74975 /* Views */,
 				E254740B29CCAA7000E74975 /* ContentView.swift */,
 				E254740D29CCAA7200E74975 /* Assets.xcassets */,
 				E254740F29CCAA7200E74975 /* Preview Content */,
@@ -101,6 +110,7 @@
 			children = (
 				E254741C29CCABDE00E74975 /* Image+Extensions.swift */,
 				E254742229CCB2E500E74975 /* Font+Extensions.swift */,
+				E254742B29CCD27000E74975 /* Color+Extensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -108,9 +118,19 @@
 		E254741E29CCB17300E74975 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E254742629CCD09500E74975 /* Roboto-Medium.ttf */,
+				E254742429CCB98000E74975 /* Roboto-Regular.ttf */,
 				E254741F29CCB18900E74975 /* Audiowide-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E254742829CCD1CC00E74975 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E254742929CCD21200E74975 /* NavigationBar.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,8 +191,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E254742729CCD09500E74975 /* Roboto-Medium.ttf in Resources */,
 				E254741129CCAA7200E74975 /* Preview Assets.xcassets in Resources */,
 				E254740E29CCAA7200E74975 /* Assets.xcassets in Resources */,
+				E254742529CCB98000E74975 /* Roboto-Regular.ttf in Resources */,
 				E254742029CCB18900E74975 /* Audiowide-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,7 +210,9 @@
 				E254740C29CCAA7000E74975 /* ContentView.swift in Sources */,
 				E254742329CCB2E500E74975 /* Font+Extensions.swift in Sources */,
 				E254740A29CCAA7000E74975 /* SolarNFTApp.swift in Sources */,
+				E254742C29CCD27000E74975 /* Color+Extensions.swift in Sources */,
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
+				E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

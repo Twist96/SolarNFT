@@ -8,8 +8,16 @@
 import SwiftUI
 
 extension Font {
-    static var audiowide: Font {
-        .custom("Audiowide-Regular", size: 36)
+    static func audiowide(size: CGFloat) -> Font {
+        .custom("Audiowide-Regular", size: size)
+    }
+
+    static func roboto(size: CGFloat) -> Font {
+        .custom("Roboto-Regular.ttf", size: size)
+    }
+
+    static func robotoMedium(size: CGFloat) -> Font {
+        .custom("Roboto-Medium.ttf", size: size)
     }
 }
 

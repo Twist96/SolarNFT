@@ -11,6 +11,10 @@
 		E254740C29CCAA7000E74975 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254740B29CCAA7000E74975 /* ContentView.swift */; };
 		E254740E29CCAA7200E74975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E254740D29CCAA7200E74975 /* Assets.xcassets */; };
 		E254741129CCAA7200E74975 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E254741029CCAA7200E74975 /* Preview Assets.xcassets */; };
+		E254741929CCAAB900E74975 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254741829CCAAB900E74975 /* OnboardingView.swift */; };
+		E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254741C29CCABDE00E74975 /* Image+Extensions.swift */; };
+		E254742029CCB18900E74975 /* Audiowide-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254741F29CCB18900E74975 /* Audiowide-Regular.ttf */; };
+		E254742329CCB2E500E74975 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742229CCB2E500E74975 /* Font+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		E254740B29CCAA7000E74975 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E254740D29CCAA7200E74975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E254741029CCAA7200E74975 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E254741829CCAAB900E74975 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E254741C29CCABDE00E74975 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
+		E254741F29CCB18900E74975 /* Audiowide-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audiowide-Regular.ttf"; sourceTree = "<group>"; };
+		E254742129CCB23800E74975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E254742229CCB2E500E74975 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,10 @@
 		E254740829CCAA7000E74975 /* SolarNFT */ = {
 			isa = PBXGroup;
 			children = (
+				E254742129CCB23800E74975 /* Info.plist */,
+				E254741E29CCB17300E74975 /* Fonts */,
+				E254741A29CCABBE00E74975 /* utils */,
+				E254741729CCAAA000E74975 /* Screens */,
 				E254740929CCAA7000E74975 /* SolarNFTApp.swift */,
 				E254740B29CCAA7000E74975 /* ContentView.swift */,
 				E254740D29CCAA7200E74975 /* Assets.xcassets */,
@@ -65,6 +78,39 @@
 				E254741029CCAA7200E74975 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E254741729CCAAA000E74975 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E254741829CCAAB900E74975 /* OnboardingView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E254741A29CCABBE00E74975 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E254741B29CCABC600E74975 /* extensions */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		E254741B29CCABC600E74975 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E254741C29CCABDE00E74975 /* Image+Extensions.swift */,
+				E254742229CCB2E500E74975 /* Font+Extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		E254741E29CCB17300E74975 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E254741F29CCB18900E74975 /* Audiowide-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +173,7 @@
 			files = (
 				E254741129CCAA7200E74975 /* Preview Assets.xcassets in Resources */,
 				E254740E29CCAA7200E74975 /* Assets.xcassets in Resources */,
+				E254742029CCB18900E74975 /* Audiowide-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E254741929CCAAB900E74975 /* OnboardingView.swift in Sources */,
 				E254740C29CCAA7000E74975 /* ContentView.swift in Sources */,
+				E254742329CCB2E500E74975 /* Font+Extensions.swift in Sources */,
 				E254740A29CCAA7000E74975 /* SolarNFTApp.swift in Sources */,
+				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,7 @@
 				DEVELOPMENT_TEAM = STBR373K7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SolarNFT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +350,7 @@
 				DEVELOPMENT_TEAM = STBR373K7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SolarNFT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

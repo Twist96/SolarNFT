@@ -26,6 +26,7 @@
 		E254743629CD89A800E74975 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743529CD89A800E74975 /* CustomTabBar.swift */; };
 		E254743829CD8F0E00E74975 /* WalletPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743729CD8F0E00E74975 /* WalletPicker.swift */; };
 		E254743A29CD903100E74975 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254743929CD903100E74975 /* Roboto-Bold.ttf */; };
+		E254743C29CDC93100E74975 /* NFTDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743B29CDC93100E74975 /* NFTDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E254743529CD89A800E74975 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		E254743729CD8F0E00E74975 /* WalletPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPicker.swift; sourceTree = "<group>"; };
 		E254743929CD903100E74975 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		E254743B29CDC93100E74975 /* NFTDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				E254741829CCAAB900E74975 /* OnboardingView.swift */,
 				E254742D29CCEBBF00E74975 /* HomeView.swift */,
 				E254743129CD818C00E74975 /* ConnectWalletView.swift */,
+				E254743B29CDC93100E74975 /* NFTDetailsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				E254743629CD89A800E74975 /* CustomTabBar.swift in Sources */,
 				E254740A29CCAA7000E74975 /* SolarNFTApp.swift in Sources */,
 				E254742C29CCD27000E74975 /* Color+Extensions.swift in Sources */,
+				E254743C29CDC93100E74975 /* NFTDetailsView.swift in Sources */,
 				E254742E29CCEBBF00E74975 /* HomeView.swift in Sources */,
 				E254743829CD8F0E00E74975 /* WalletPicker.swift in Sources */,
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,

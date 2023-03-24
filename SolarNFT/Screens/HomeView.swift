@@ -11,31 +11,38 @@ struct HomeView: View {
     @State var startAnimation: Bool = false
 
     var body: some View {
-        ZStack {
-            background
-                .task {
-                    withAnimation(.easeInOut(duration: 7).repeatForever(autoreverses: true)) {
-                        startAnimation = true
-                    }
-            }
-
-            VStack {
-                header
-
-                ScrollView(showsIndicators: false) {
-                    VStack {
-                        trending
-
-                        LazyVGrid(columns: Array(repeating: GridItem(.fixed(150), spacing: 30), count: 2), spacing: 20) {
-                            ForEach(0 ..< 5) { item in
-                                NFTCard()
-                            }
+        NavigationStack {
+            ZStack {
+                background
+                    .task {
+                        withAnimation(.easeInOut(duration: 7).repeatForever(autoreverses: true)) {
+                            startAnimation = true
                         }
-                        .padding(.bottom, 140)
-
-                    }
                 }
-                .padding(.horizontal, 26)
+
+                VStack {
+                    header
+
+                    ScrollView(showsIndicators: false) {
+                        VStack {
+                            trending
+
+                            LazyVGrid(columns: Array(repeating: GridItem(.fixed(150), spacing: 30), count: 2), spacing: 20) {
+                                ForEach(0 ..< 5) { item in
+                                    NavigationLink {
+                                        NFTDetailsView()
+                                    } label: {
+                                        NFTCard()
+                                    }
+
+                                }
+                            }
+                            .padding(.bottom, 140)
+
+                        }
+                    }
+                    .padding(.horizontal, 26)
+                }
             }
         }
     }

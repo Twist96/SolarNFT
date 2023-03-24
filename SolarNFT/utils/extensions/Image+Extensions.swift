@@ -59,4 +59,12 @@ extension Image {
     static var beacon: Image {
         Image("Beacon")
     }
+
+    static var avatar: Image {
+        Image("Avatar")
+    }
+
+    static var bear: Image {
+        Image("Bear")
+    }
 }

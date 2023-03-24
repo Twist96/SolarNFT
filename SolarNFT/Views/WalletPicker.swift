@@ -63,6 +63,11 @@ struct WalletPicker: View {
                                 .frame(maxWidth: isActive ? .infinity : 0)
                         }
                         .opacity(isActive ? 1 : 0)
+
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color._gray2.opacity(0.5))
+                        .padding(5)
+                        .opacity(isActive ? 1 : 0)
                 }
             }
         }

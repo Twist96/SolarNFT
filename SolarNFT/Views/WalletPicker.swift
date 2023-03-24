@@ -42,8 +42,16 @@ struct WalletPicker: View {
                     }
                 }
                 .frame(width: 45, height: 45)
+
                 Text(wallet.rawValue)
                     .fontWeight(.bold)
+
+                Spacer()
+
+                Image(systemName: "arrow.right")
+                    .foregroundColor(.white)
+                    .padding(.leading, 12)
+                    .opacity(isActive ? 1 : 0)
             }
             .padding(.horizontal, 24)
             .padding(.vertical, 18)

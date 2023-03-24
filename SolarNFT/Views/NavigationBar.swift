@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct NavigationBar: View {
-    var menuList = NavBarMenu.allCases
-    @AppStorage("activeMenu") var activeMenu: NavBarMenu = .home
+    @Binding var activeMenu: NavBarMenu
     @State var circleOffset: Double = .zero
+    var menuList = NavBarMenu.allCases
 
     var body: some View {
         VStack {
@@ -70,7 +70,7 @@ struct NavigationBar: View {
 
 struct NavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationBar()
+        NavigationBar(activeMenu: .constant(.home))
             .background(.background)
     }
 }

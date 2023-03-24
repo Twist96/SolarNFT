@@ -25,6 +25,7 @@ struct ConnectWalletView: View {
                     WalletPicker()
                 }
                 .padding(.horizontal, 34)
+                .padding(.bottom, 100)
             }
             .padding(.top, 60)
         }

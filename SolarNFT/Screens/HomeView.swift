@@ -37,8 +37,6 @@ struct HomeView: View {
                 }
                 .padding(.horizontal, 26)
             }
-
-            NavigationBar()
         }
     }
 

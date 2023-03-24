@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("activeMenu") var activeMenu: NavBarMenu = .home
+
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
     var body: some View {
-        HomeView()
+        ZStack {
+            TabView(selection: $activeMenu) {
+                HomeView()
+                    .tag(NavBarMenu.home)
+
+                Text("Search")
+                    .tag(NavBarMenu.search)
+
+                Text("Create NFT")
+                    .tag(NavBarMenu.plus)
+
+                Text("Discovery")
+                    .tag(NavBarMenu.discovery)
+
+                ConnectWalletView()
+                    .tag(NavBarMenu.profile)
+            }
+            NavigationBar(activeMenu: $activeMenu)
+        }
     }
 }
 

@@ -25,7 +25,6 @@ struct NavigationBar: View {
                                 .frame(maxWidth: .infinity)
                                 .onTapGesture {
                                     activeMenu = menu
-                                    print(menu.rawValue)
                                     withAnimation(.easeInOut) {
                                         circleOffset = Double(activeMenu.index) * buttonWidth
                                     }

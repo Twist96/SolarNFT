@@ -15,4 +15,24 @@ extension Color {
     static var _blue: Color {
         Color("Blue")
     }
+
+    static var _red: Color {
+        Color("Red")
+    }
+
+    static var _gray: Color {
+        Color("Gray")
+    }
+
+    static var _gray2: Color {
+        Color("Gray2")
+    }
+
+    static var _redFade: Color {
+        Color("RedFade")
+    }
+
+    static var _cyan: Color {
+        Color("Cyan")
+    }
 }

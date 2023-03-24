@@ -31,4 +31,16 @@ extension Image {
     static var discovery: Image {
         Image("Discovery")
     }
+
+    static var magnifyingGlass: Image {
+        Image("MagnifyingGlass")
+    }
+
+    static var ape: Image {
+        Image("Ape")
+    }
+
+    static var verificationBadge: Image {
+        Image("VerificationBadge")
+    }
 }

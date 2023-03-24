@@ -19,6 +19,9 @@
 		E254742729CCD09500E74975 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254742629CCD09500E74975 /* Roboto-Medium.ttf */; };
 		E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742929CCD21200E74975 /* NavigationBar.swift */; };
 		E254742C29CCD27000E74975 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742B29CCD27000E74975 /* Color+Extensions.swift */; };
+		E254742E29CCEBBF00E74975 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742D29CCEBBF00E74975 /* HomeView.swift */; };
+		E254743029CD02C600E74975 /* NFTCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742F29CD02C600E74975 /* NFTCard.swift */; };
+		E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743129CD818C00E74975 /* ConnectWalletView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		E254742629CCD09500E74975 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		E254742929CCD21200E74975 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		E254742B29CCD27000E74975 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		E254742D29CCEBBF00E74975 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E254742F29CD02C600E74975 /* NFTCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCard.swift; sourceTree = "<group>"; };
+		E254743129CD818C00E74975 /* ConnectWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWalletView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				E254741829CCAAB900E74975 /* OnboardingView.swift */,
+				E254742D29CCEBBF00E74975 /* HomeView.swift */,
+				E254743129CD818C00E74975 /* ConnectWalletView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E254742929CCD21200E74975 /* NavigationBar.swift */,
+				E254742F29CD02C600E74975 /* NFTCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,8 +220,11 @@
 				E254742329CCB2E500E74975 /* Font+Extensions.swift in Sources */,
 				E254740A29CCAA7000E74975 /* SolarNFTApp.swift in Sources */,
 				E254742C29CCD27000E74975 /* Color+Extensions.swift in Sources */,
+				E254742E29CCEBBF00E74975 /* HomeView.swift in Sources */,
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
 				E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */,
+				E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */,
+				E254743029CD02C600E74975 /* NFTCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

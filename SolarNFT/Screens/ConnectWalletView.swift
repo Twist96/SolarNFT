@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ConnectWalletView: View {
+    @AppStorage("selectedChain") var selectedChain: Chain = .etherium
     var body: some View {
         VStack(spacing: 0) {
             header
@@ -17,7 +18,15 @@ struct ConnectWalletView: View {
                 .foregroundColor(.white)
                 .padding(.top, 36)
 
-            Text("Etherium")
+            VStack(spacing: 28) {
+                CustomTabBar(selectedWallet: $selectedChain)
+
+                ScrollView(showsIndicators: false) {
+                    WalletPicker()
+                }
+                .padding(.horizontal, 34)
+            }
+            .padding(.top, 60)
         }
         .background(Color._background)
     }

@@ -43,4 +43,20 @@ extension Image {
     static var verificationBadge: Image {
         Image("VerificationBadge")
     }
+
+    static var metaMask: Image {
+        Image("MetaMask")
+    }
+
+    static var coinBase: Image {
+        Image("CoinBase")
+    }
+
+    static var walletConnect: Image {
+        Image("WalletConnect")
+    }
+
+    static var beacon: Image {
+        Image("Beacon")
+    }
 }

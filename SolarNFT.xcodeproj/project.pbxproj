@@ -22,6 +22,10 @@
 		E254742E29CCEBBF00E74975 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742D29CCEBBF00E74975 /* HomeView.swift */; };
 		E254743029CD02C600E74975 /* NFTCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254742F29CD02C600E74975 /* NFTCard.swift */; };
 		E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743129CD818C00E74975 /* ConnectWalletView.swift */; };
+		E254743429CD88E000E74975 /* Exo2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254743329CD88E000E74975 /* Exo2-Regular.ttf */; };
+		E254743629CD89A800E74975 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743529CD89A800E74975 /* CustomTabBar.swift */; };
+		E254743829CD8F0E00E74975 /* WalletPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743729CD8F0E00E74975 /* WalletPicker.swift */; };
+		E254743A29CD903100E74975 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254743929CD903100E74975 /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		E254742D29CCEBBF00E74975 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E254742F29CD02C600E74975 /* NFTCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCard.swift; sourceTree = "<group>"; };
 		E254743129CD818C00E74975 /* ConnectWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWalletView.swift; sourceTree = "<group>"; };
+		E254743329CD88E000E74975 /* Exo2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Regular.ttf"; sourceTree = "<group>"; };
+		E254743529CD89A800E74975 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		E254743729CD8F0E00E74975 /* WalletPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPicker.swift; sourceTree = "<group>"; };
+		E254743929CD903100E74975 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +134,9 @@
 		E254741E29CCB17300E74975 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E254743929CD903100E74975 /* Roboto-Bold.ttf */,
 				E254742629CCD09500E74975 /* Roboto-Medium.ttf */,
+				E254743329CD88E000E74975 /* Exo2-Regular.ttf */,
 				E254742429CCB98000E74975 /* Roboto-Regular.ttf */,
 				E254741F29CCB18900E74975 /* Audiowide-Regular.ttf */,
 			);
@@ -138,6 +148,8 @@
 			children = (
 				E254742929CCD21200E74975 /* NavigationBar.swift */,
 				E254742F29CD02C600E74975 /* NFTCard.swift */,
+				E254743529CD89A800E74975 /* CustomTabBar.swift */,
+				E254743729CD8F0E00E74975 /* WalletPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,11 +212,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E254743A29CD903100E74975 /* Roboto-Bold.ttf in Resources */,
 				E254742729CCD09500E74975 /* Roboto-Medium.ttf in Resources */,
 				E254741129CCAA7200E74975 /* Preview Assets.xcassets in Resources */,
 				E254740E29CCAA7200E74975 /* Assets.xcassets in Resources */,
 				E254742529CCB98000E74975 /* Roboto-Regular.ttf in Resources */,
 				E254742029CCB18900E74975 /* Audiowide-Regular.ttf in Resources */,
+				E254743429CD88E000E74975 /* Exo2-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +232,11 @@
 				E254741929CCAAB900E74975 /* OnboardingView.swift in Sources */,
 				E254740C29CCAA7000E74975 /* ContentView.swift in Sources */,
 				E254742329CCB2E500E74975 /* Font+Extensions.swift in Sources */,
+				E254743629CD89A800E74975 /* CustomTabBar.swift in Sources */,
 				E254740A29CCAA7000E74975 /* SolarNFTApp.swift in Sources */,
 				E254742C29CCD27000E74975 /* Color+Extensions.swift in Sources */,
 				E254742E29CCEBBF00E74975 /* HomeView.swift in Sources */,
+				E254743829CD8F0E00E74975 /* WalletPicker.swift in Sources */,
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
 				E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */,
 				E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */,

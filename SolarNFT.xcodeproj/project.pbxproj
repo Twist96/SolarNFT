@@ -27,6 +27,7 @@
 		E254743829CD8F0E00E74975 /* WalletPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743729CD8F0E00E74975 /* WalletPicker.swift */; };
 		E254743A29CD903100E74975 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254743929CD903100E74975 /* Roboto-Bold.ttf */; };
 		E254743C29CDC93100E74975 /* NFTDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743B29CDC93100E74975 /* NFTDetailsView.swift */; };
+		E260213329CF029C00D73F01 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213229CF029C00D73F01 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		E254743729CD8F0E00E74975 /* WalletPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPicker.swift; sourceTree = "<group>"; };
 		E254743929CD903100E74975 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		E254743B29CDC93100E74975 /* NFTDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTDetailsView.swift; sourceTree = "<group>"; };
+		E260213229CF029C00D73F01 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				E254741B29CCABC600E74975 /* extensions */,
+				E260213229CF029C00D73F01 /* AppState.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				E254743C29CDC93100E74975 /* NFTDetailsView.swift in Sources */,
 				E254742E29CCEBBF00E74975 /* HomeView.swift in Sources */,
 				E254743829CD8F0E00E74975 /* WalletPicker.swift in Sources */,
+				E260213329CF029C00D73F01 /* AppState.swift in Sources */,
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
 				E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */,
 				E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */,

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("activeMenu") var activeMenu: NavBarMenu = .home
+    @EnvironmentObject var appState: AppState
+
+    @State var isHidden = false
 
     init() {
         UITabBar.appearance().isHidden = true
@@ -32,6 +35,7 @@ struct ContentView: View {
                     .tag(NavBarMenu.profile)
             }
             NavigationBar(activeMenu: $activeMenu)
+                .offset(y: appState.isNavBarHidden ? 150 : 0)
         }
     }
 }
@@ -39,5 +43,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AppState())
     }
 }

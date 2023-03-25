@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NFTDetailsView: View {
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var appState: AppState
 
     var body: some View {
         ZStack {
@@ -39,6 +40,19 @@ struct NFTDetailsView: View {
             .padding(.top, 160)
         }
         .navigationBarBackButtonHidden()
+        .onAppear {
+
+        }
+        .onAppear {
+            withAnimation(.easeInOut) {
+                appState.isNavBarHidden = true
+            }
+        }
+        .onDisappear {
+            withAnimation(.easeInOut) {
+                appState.isNavBarHidden = false
+            }
+        }
     }
 
     var header: some View {
@@ -58,6 +72,7 @@ struct NFTDetailsView: View {
                     .padding(.top, 40)
                     .padding(.trailing, 24)
             }
+
             VStack(alignment: .leading, spacing: 10) {
                 Text("Luppy Club")
                     .font(.exo2(size: 30))
@@ -182,5 +197,6 @@ struct NFTDetailsView: View {
 struct NFTDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NFTDetailsView()
+            .environmentObject(AppState())
     }
 }

@@ -28,6 +28,7 @@
 		E254743A29CD903100E74975 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254743929CD903100E74975 /* Roboto-Bold.ttf */; };
 		E254743C29CDC93100E74975 /* NFTDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743B29CDC93100E74975 /* NFTDetailsView.swift */; };
 		E260213329CF029C00D73F01 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213229CF029C00D73F01 /* AppState.swift */; };
+		E260213729CF159B00D73F01 /* NFTLargeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213629CF159B00D73F01 /* NFTLargeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		E254743929CD903100E74975 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		E254743B29CDC93100E74975 /* NFTDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTDetailsView.swift; sourceTree = "<group>"; };
 		E260213229CF029C00D73F01 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E260213629CF159B00D73F01 /* NFTLargeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTLargeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				E254742929CCD21200E74975 /* NavigationBar.swift */,
 				E254742F29CD02C600E74975 /* NFTCard.swift */,
+				E260213629CF159B00D73F01 /* NFTLargeCard.swift */,
 				E254743529CD89A800E74975 /* CustomTabBar.swift */,
 				E254743729CD8F0E00E74975 /* WalletPicker.swift */,
 			);
@@ -248,6 +251,7 @@
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
 				E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */,
 				E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */,
+				E260213729CF159B00D73F01 /* NFTLargeCard.swift in Sources */,
 				E254743029CD02C600E74975 /* NFTCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

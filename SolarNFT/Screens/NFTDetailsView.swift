@@ -19,25 +19,7 @@ struct NFTDetailsView: View {
 
             header
 
-            ZStack {
-                Image.bear
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .cornerRadius(40)
-                    .ignoresSafeArea()
-
-                VStack {
-
-                    imageHeader
-
-                    Spacer()
-
-                    imageFooter
-
-                }
-            }
-            .padding(.top, 160)
+            NFTLargeCard()
         }
         .navigationBarBackButtonHidden()
         .onAppear {

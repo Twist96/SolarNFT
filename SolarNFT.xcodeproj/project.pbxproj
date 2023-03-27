@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E213FBD529D21B3F00FDB440 /* CustomShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E213FBD429D21B3F00FDB440 /* CustomShapes.swift */; };
 		E254740A29CCAA7000E74975 /* SolarNFTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254740929CCAA7000E74975 /* SolarNFTApp.swift */; };
 		E254740C29CCAA7000E74975 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254740B29CCAA7000E74975 /* ContentView.swift */; };
 		E254740E29CCAA7200E74975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E254740D29CCAA7200E74975 /* Assets.xcassets */; };
@@ -29,9 +30,12 @@
 		E254743C29CDC93100E74975 /* NFTDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743B29CDC93100E74975 /* NFTDetailsView.swift */; };
 		E260213329CF029C00D73F01 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213229CF029C00D73F01 /* AppState.swift */; };
 		E260213729CF159B00D73F01 /* NFTLargeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213629CF159B00D73F01 /* NFTLargeCard.swift */; };
+		E260213A29CF312800D73F01 /* ScrollKit in Frameworks */ = {isa = PBXBuildFile; productRef = E260213929CF312800D73F01 /* ScrollKit */; };
+		E260213C29CF841400D73F01 /* OffsettableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213B29CF841400D73F01 /* OffsettableScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E213FBD429D21B3F00FDB440 /* CustomShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapes.swift; sourceTree = "<group>"; };
 		E254740629CCAA7000E74975 /* SolarNFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarNFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E254740929CCAA7000E74975 /* SolarNFTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarNFTApp.swift; sourceTree = "<group>"; };
 		E254740B29CCAA7000E74975 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 		E254743B29CDC93100E74975 /* NFTDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTDetailsView.swift; sourceTree = "<group>"; };
 		E260213229CF029C00D73F01 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		E260213629CF159B00D73F01 /* NFTLargeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTLargeCard.swift; sourceTree = "<group>"; };
+		E260213B29CF841400D73F01 /* OffsettableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsettableScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E260213A29CF312800D73F01 /* ScrollKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +131,7 @@
 			children = (
 				E254741B29CCABC600E74975 /* extensions */,
 				E260213229CF029C00D73F01 /* AppState.swift */,
+				E260213B29CF841400D73F01 /* OffsettableScrollView.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 				E260213629CF159B00D73F01 /* NFTLargeCard.swift */,
 				E254743529CD89A800E74975 /* CustomTabBar.swift */,
 				E254743729CD8F0E00E74975 /* WalletPicker.swift */,
+				E213FBD429D21B3F00FDB440 /* CustomShapes.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +187,9 @@
 			dependencies = (
 			);
 			name = SolarNFT;
+			packageProductDependencies = (
+				E260213929CF312800D73F01 /* ScrollKit */,
+			);
 			productName = SolarNFT;
 			productReference = E254740629CCAA7000E74975 /* SolarNFT.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +218,9 @@
 				Base,
 			);
 			mainGroup = E25473FD29CCAA7000E74975;
+			packageReferences = (
+				E260213829CF312800D73F01 /* XCRemoteSwiftPackageReference "ScrollKit" */,
+			);
 			productRefGroup = E254740729CCAA7000E74975 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,11 +262,13 @@
 				E254742E29CCEBBF00E74975 /* HomeView.swift in Sources */,
 				E254743829CD8F0E00E74975 /* WalletPicker.swift in Sources */,
 				E260213329CF029C00D73F01 /* AppState.swift in Sources */,
+				E213FBD529D21B3F00FDB440 /* CustomShapes.swift in Sources */,
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
 				E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */,
 				E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */,
 				E260213729CF159B00D73F01 /* NFTLargeCard.swift in Sources */,
 				E254743029CD02C600E74975 /* NFTCard.swift in Sources */,
+				E260213C29CF841400D73F01 /* OffsettableScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +471,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E260213829CF312800D73F01 /* XCRemoteSwiftPackageReference "ScrollKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/ScrollKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E260213929CF312800D73F01 /* ScrollKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E260213829CF312800D73F01 /* XCRemoteSwiftPackageReference "ScrollKit" */;
+			productName = ScrollKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E25473FE29CCAA7000E74975 /* Project object */;
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    var nfts = NFT.fakeDataList + NFT.fakeDataList
+    @State var nfts = NFT.fakeDataList + NFT.fakeDataList
     @State var startAnimation: Bool = false
     @State private var offset = CGPoint.zero
 

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @EnvironmentObject var appState: AppState
+
     var body: some View {
         ZStack {
             Image.onboardingBackground
@@ -40,7 +42,9 @@ struct OnboardingView: View {
                     .padding(.bottom, 84)
 
                 Button {
-                    print("login in")
+                    withAnimation {
+                        appState.loginState = .loggedIn
+                    }
                 } label: {
                     Text("Let Explore.")
                         .font(.robotoMedium(size: 18))
@@ -62,5 +66,6 @@ struct OnboardingView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
+            .environmentObject(AppState())
     }
 }

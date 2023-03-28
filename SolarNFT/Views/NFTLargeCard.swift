@@ -22,6 +22,13 @@ struct NFTLargeCard: View {
                     .frame(width: proxy.size.width)
                     .clipShape(RoundedRectangle(cornerRadius: 40))
                     .ignoresSafeArea()
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke()
+                            .foregroundStyle(.linearGradient(colors: [Color._gray.opacity(isLarge ? 0 : 0.8), .clear, .clear], startPoint: .top, endPoint: .bottom))
+                            .ignoresSafeArea()
+                    }
+                    .shadow(color: .white.opacity(isLarge ? 0 : 0.2), radius: 20, x: -10, y: 0)
             }
 
             VStack {
@@ -154,5 +161,6 @@ struct NFTLargeCard: View {
 struct NFTLargeCard_Previews: PreviewProvider {
     static var previews: some View {
         NFTLargeCard(nft: NFT.fakeDataList[0])
+            .background(Color._background)
     }
 }

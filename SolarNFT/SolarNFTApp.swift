@@ -12,7 +12,7 @@ struct SolarNFTApp: App {
     @State var appState: AppState = AppState()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environmentObject(appState)
         }
     }

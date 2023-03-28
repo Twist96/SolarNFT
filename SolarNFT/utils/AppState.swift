@@ -9,4 +9,5 @@ import Foundation
 
 class AppState: ObservableObject {
     @Published var isNavBarHidden = false
+    @Published var loginState: LoginStatus = .onBoarding
 }

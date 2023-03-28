@@ -34,6 +34,7 @@
 		E296180629D2F86100B591F4 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296180529D2F86100B591F4 /* NFT.swift */; };
 		E296180929D2F93900B591F4 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = E296180829D2F93900B591F4 /* Fakery */; };
 		E296180B29D2FD2800B591F4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296180A29D2FD2800B591F4 /* Double+Extensions.swift */; };
+		E296180F29D3372900B591F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296180E29D3372900B591F4 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		E260213B29CF841400D73F01 /* OffsettableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsettableScrollView.swift; sourceTree = "<group>"; };
 		E296180529D2F86100B591F4 /* NFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFT.swift; sourceTree = "<group>"; };
 		E296180A29D2FD2800B591F4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		E296180E29D3372900B591F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E254740929CCAA7000E74975 /* SolarNFTApp.swift */,
 				E254742829CCD1CC00E74975 /* Views */,
 				E254740B29CCAA7000E74975 /* ContentView.swift */,
+				E296180E29D3372900B591F4 /* MainView.swift */,
 				E254740D29CCAA7200E74975 /* Assets.xcassets */,
 				E254740F29CCAA7200E74975 /* Preview Content */,
 			);
@@ -279,6 +282,7 @@
 				E213FBD529D21B3F00FDB440 /* CustomShapes.swift in Sources */,
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
 				E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */,
+				E296180F29D3372900B591F4 /* MainView.swift in Sources */,
 				E296180B29D2FD2800B591F4 /* Double+Extensions.swift in Sources */,
 				E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */,
 				E296180629D2F86100B591F4 /* NFT.swift in Sources */,

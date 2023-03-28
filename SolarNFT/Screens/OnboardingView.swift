@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @EnvironmentObject var appState: AppState
+    @ObservedObject var motionManager = MotionManager()
 
     var body: some View {
         ZStack {
@@ -18,19 +19,22 @@ struct OnboardingView: View {
                 .ignoresSafeArea()
                 .background(.black)
                 .overlay {
-                    RoundedRectangle(cornerRadius: 40)
-                        .foregroundColor(.white)
-                        .ignoresSafeArea()
+                    Image.onboardingBackground
+                        .mask {
+                            LinearGradient(colors: [.clear, .white, .clear, .white, .clear, .white, .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(motionManager.roll * 8 + 1), y: abs(motionManager.roll * 8 + 1)))
+                        }
                         .blendMode(.overlay)
-                        .ignoresSafeArea()
-                        .opacity(0.5)
                 }
                 .overlay {
-                    RoundedRectangle(cornerRadius: 40)
-                        .foregroundColor(.white)
-                        .opacity(0.15)
-                        .ignoresSafeArea()
+                    ZStack {
+                        LinearGradient(colors: [.clear, .white.opacity(0.2), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(motionManager.roll * 5 + 1), y: abs(motionManager.roll * 5 + 1)))
+                        LinearGradient(colors: [.purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+                            .cornerRadius(50)
+                            .blendMode(.softLight)
+                            .opacity(0.5)
+                    }
                 }
+
 
             VStack {
                 Spacer()

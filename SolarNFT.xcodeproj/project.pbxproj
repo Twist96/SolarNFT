@@ -35,6 +35,7 @@
 		E296180929D2F93900B591F4 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = E296180829D2F93900B591F4 /* Fakery */; };
 		E296180B29D2FD2800B591F4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296180A29D2FD2800B591F4 /* Double+Extensions.swift */; };
 		E296180F29D3372900B591F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296180E29D3372900B591F4 /* MainView.swift */; };
+		E296181129D33DB000B591F4 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296181029D33DB000B591F4 /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		E296180529D2F86100B591F4 /* NFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFT.swift; sourceTree = "<group>"; };
 		E296180A29D2FD2800B591F4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		E296180E29D3372900B591F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E296181029D33DB000B591F4 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				E254741B29CCABC600E74975 /* extensions */,
 				E260213229CF029C00D73F01 /* AppState.swift */,
+				E296181029D33DB000B591F4 /* MotionManager.swift */,
 				E260213B29CF841400D73F01 /* OffsettableScrollView.swift */,
 			);
 			path = utils;
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E254741929CCAAB900E74975 /* OnboardingView.swift in Sources */,
+				E296181129D33DB000B591F4 /* MotionManager.swift in Sources */,
 				E254740C29CCAA7000E74975 /* ContentView.swift in Sources */,
 				E254742329CCB2E500E74975 /* Font+Extensions.swift in Sources */,
 				E254743629CD89A800E74975 /* CustomTabBar.swift in Sources */,

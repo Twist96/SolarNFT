@@ -19,8 +19,21 @@ struct HomeView: View {
         self.offset = scrollOffset
     }
 
+    @State var headerCollapsed = false
+
     var multiplierEffect: Double {
-        return 1.0 - offset.y / 200.0
+        let value = 1.0 - offset.y / 200.0
+        return value < 0.25 ? 0.25 : value
+    }
+
+    var headerFont: CGFloat {
+        let font = 30 * (multiplierEffect * 1.5)
+        if font < 24 {
+            return 24
+        } else if font > 50 {
+            return 50
+        }
+        return font
     }
 
     var body: some View {
@@ -58,34 +71,47 @@ struct HomeView: View {
     }
 
     var header: some View {
-        HStack {
-            Text("Explore\nCollection")
-                .font(.audiowide(size: 30))
-                .foregroundColor(._gray)
-                .background {
-                    RadialGradient(colors: [.gray, .clear], center: .center, startRadius: 1, endRadius: 200)
-                        .frame(width: 250, height: 250)
-                        .blur(radius: 30)
-                        .opacity(0.5)
-                        .offset(x: -50)
-                }
+        ZStack(alignment: .bottom) {
 
-            Spacer()
+            LinearGradient(colors: [.black.opacity(0.8), .clear], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
 
-            Image.magnifyingGlass
-                .frame(width: 46, height: 46)
-                .background {
-                    Circle()
-                        .stroke(style: StrokeStyle(lineWidth: 3))
-                        .foregroundColor(._redFade)
-                }
+            VStack(spacing: 0) {
+                Color.black
+                    .ignoresSafeArea()
+                    .opacity(headerFont < 28 ? 0.5 : 0)
+
+                Divider()
+                    .opacity(headerFont < 28 ? 1 : 0)
+            }
+
+            HStack {
+                Text(multiplierEffect > 0.6 ? "Explore\nCollection" : "ExploreCollection")
+                    .font(.audiowide(size: headerFont))
+                    .foregroundColor(._gray)
+                    .background {
+                        RadialGradient(colors: [.gray, .clear], center: .center, startRadius: 1, endRadius: 200)
+                            .frame(width: 250, height: 250)
+                            .blur(radius: 30)
+                            .opacity(0.5)
+                            .offset(x: -50)
+                    }
+
+                Spacer()
+
+                Image.magnifyingGlass
+                    .frame(width: 46, height: 46)
+                    .background {
+                        Circle()
+                            .stroke(style: StrokeStyle(lineWidth: 3))
+                            .foregroundColor(._redFade)
+                    }
+                    .scaleEffect(headerFont < 28 ? 0.5 : 1)
+            }
+            .padding(.horizontal, 30)
+
         }
-        .padding(.horizontal, 30)
-        .padding(.top, 100 * multiplierEffect)
-        .onChange(of: multiplierEffect) { newValue in
-            print("offset: ", offset.y)
-            print("multiplierEffect: ", newValue)
-        }
+        .frame(height: 180 * multiplierEffect, alignment: .bottom)
     }
 
     var trending: some View {

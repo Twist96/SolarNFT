@@ -27,9 +27,9 @@ struct OffsetObservingScrollView<Content: View>: View {
                     get: { offset },
                     set: { newOffset in
                         offset = CGPoint(
-    x: -newOffset.x,
-    y: -newOffset.y
-)
+                            x: -newOffset.x,
+                            y: -newOffset.y
+                        )
                     }
                 ),
                 content: content
@@ -41,16 +41,16 @@ struct OffsetObservingScrollView<Content: View>: View {
 
 struct PositionObservingView<Content: View>: View {
     var coordinateSpace: CoordinateSpace
-@Binding var position: CGPoint
+    @Binding var position: CGPoint
     @ViewBuilder var content: () -> Content
 
     var body: some View {
         content()
             .background(GeometryReader { geometry in
                 Color.clear.preference(
-    key: PreferenceKey.self,
-    value: geometry.frame(in: coordinateSpace).origin
-)
+                    key: PreferenceKey.self,
+                    value: geometry.frame(in: coordinateSpace).origin
+                )
             })
             .onPreferenceChange(PreferenceKey.self) { position in
                 self.position = position

@@ -7,6 +7,6 @@
 
 import Foundation
 
-//class AppState: ObservableObject {
-//    @Published var isNavBarHidden = false
-//}
+class AppState: ObservableObject {
+    @Published var isNavBarHidden = false
+}

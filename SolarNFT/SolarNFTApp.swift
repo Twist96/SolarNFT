@@ -17,11 +17,3 @@ struct SolarNFTApp: App {
         }
     }
 }
-
-class AppState: ObservableObject {
-    @Published var isNavBarHidden = false
-
-    init(isNavBarHidden: Bool = false) {
-        self.isNavBarHidden = isNavBarHidden
-    }
-}

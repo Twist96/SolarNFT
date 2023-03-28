@@ -30,8 +30,10 @@
 		E254743C29CDC93100E74975 /* NFTDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254743B29CDC93100E74975 /* NFTDetailsView.swift */; };
 		E260213329CF029C00D73F01 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213229CF029C00D73F01 /* AppState.swift */; };
 		E260213729CF159B00D73F01 /* NFTLargeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213629CF159B00D73F01 /* NFTLargeCard.swift */; };
-		E260213A29CF312800D73F01 /* ScrollKit in Frameworks */ = {isa = PBXBuildFile; productRef = E260213929CF312800D73F01 /* ScrollKit */; };
 		E260213C29CF841400D73F01 /* OffsettableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260213B29CF841400D73F01 /* OffsettableScrollView.swift */; };
+		E296180629D2F86100B591F4 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296180529D2F86100B591F4 /* NFT.swift */; };
+		E296180929D2F93900B591F4 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = E296180829D2F93900B591F4 /* Fakery */; };
+		E296180B29D2FD2800B591F4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296180A29D2FD2800B591F4 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		E260213229CF029C00D73F01 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		E260213629CF159B00D73F01 /* NFTLargeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTLargeCard.swift; sourceTree = "<group>"; };
 		E260213B29CF841400D73F01 /* OffsettableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsettableScrollView.swift; sourceTree = "<group>"; };
+		E296180529D2F86100B591F4 /* NFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFT.swift; sourceTree = "<group>"; };
+		E296180A29D2FD2800B591F4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E260213A29CF312800D73F01 /* ScrollKit in Frameworks */,
+				E296180929D2F93900B591F4 /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 		E254740829CCAA7000E74975 /* SolarNFT */ = {
 			isa = PBXGroup;
 			children = (
+				E296180429D2F83E00B591F4 /* Data */,
 				E254742129CCB23800E74975 /* Info.plist */,
 				E254741E29CCB17300E74975 /* Fonts */,
 				E254741A29CCABBE00E74975 /* utils */,
@@ -142,6 +147,7 @@
 				E254741C29CCABDE00E74975 /* Image+Extensions.swift */,
 				E254742229CCB2E500E74975 /* Font+Extensions.swift */,
 				E254742B29CCD27000E74975 /* Color+Extensions.swift */,
+				E296180A29D2FD2800B591F4 /* Double+Extensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -171,6 +177,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E296180429D2F83E00B591F4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E296180529D2F86100B591F4 /* NFT.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,7 +202,7 @@
 			);
 			name = SolarNFT;
 			packageProductDependencies = (
-				E260213929CF312800D73F01 /* ScrollKit */,
+				E296180829D2F93900B591F4 /* Fakery */,
 			);
 			productName = SolarNFT;
 			productReference = E254740629CCAA7000E74975 /* SolarNFT.app */;
@@ -219,7 +233,7 @@
 			);
 			mainGroup = E25473FD29CCAA7000E74975;
 			packageReferences = (
-				E260213829CF312800D73F01 /* XCRemoteSwiftPackageReference "ScrollKit" */,
+				E296180729D2F93900B591F4 /* XCRemoteSwiftPackageReference "Fakery" */,
 			);
 			productRefGroup = E254740729CCAA7000E74975 /* Products */;
 			projectDirPath = "";
@@ -265,7 +279,9 @@
 				E213FBD529D21B3F00FDB440 /* CustomShapes.swift in Sources */,
 				E254741D29CCABDE00E74975 /* Image+Extensions.swift in Sources */,
 				E254742A29CCD21200E74975 /* NavigationBar.swift in Sources */,
+				E296180B29D2FD2800B591F4 /* Double+Extensions.swift in Sources */,
 				E254743229CD818C00E74975 /* ConnectWalletView.swift in Sources */,
+				E296180629D2F86100B591F4 /* NFT.swift in Sources */,
 				E260213729CF159B00D73F01 /* NFTLargeCard.swift in Sources */,
 				E254743029CD02C600E74975 /* NFTCard.swift in Sources */,
 				E260213C29CF841400D73F01 /* OffsettableScrollView.swift in Sources */,
@@ -473,21 +489,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E260213829CF312800D73F01 /* XCRemoteSwiftPackageReference "ScrollKit" */ = {
+		E296180729D2F93900B591F4 /* XCRemoteSwiftPackageReference "Fakery" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielsaidi/ScrollKit";
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E260213929CF312800D73F01 /* ScrollKit */ = {
+		E296180829D2F93900B591F4 /* Fakery */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E260213829CF312800D73F01 /* XCRemoteSwiftPackageReference "ScrollKit" */;
-			productName = ScrollKit;
+			package = E296180729D2F93900B591F4 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

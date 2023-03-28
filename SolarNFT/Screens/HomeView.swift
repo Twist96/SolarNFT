@@ -8,18 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    var nfts = NFT.fakeDataList + NFT.fakeDataList
     @State var startAnimation: Bool = false
-    @State var imageHeight: CGFloat = 0
-    let headerHeight: CGFloat = 200
-
     @State private var offset = CGPoint.zero
-    @State private var visibleRatio = CGFloat.zero
-
-    func handleOffset(_ scrollOffset: CGPoint, visibleHeaderRatio: CGFloat) {
-        self.offset = scrollOffset
-    }
-
-    @State var headerCollapsed = false
 
     var multiplierEffect: Double {
         let value = 1.0 - offset.y / 200.0
@@ -49,17 +40,16 @@ struct HomeView: View {
                     VStack {
                         trending
                         LazyVGrid(columns: Array(repeating: GridItem(.fixed(150), spacing: 30), count: 2), spacing: 20) {
-                            ForEach(0 ..< 50) { item in
+                            ForEach(nfts) { item in
                                 NavigationLink {
-                                    NFTDetailsView()
+                                    NFTDetailsView(nft: item)
                                 } label: {
-                                    NFTCard()
+                                    NFTCard(nft: item)
                                 }
 
                             }
                         }
                         .padding(.bottom, 140)
-
                     }
                 }
                 .overlay(alignment: .top) {

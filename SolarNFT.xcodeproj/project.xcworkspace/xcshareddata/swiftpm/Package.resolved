@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "scrollkit",
+      "identity" : "fakery",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/danielsaidi/ScrollKit",
+      "location" : "https://github.com/vadymmarkov/Fakery",
       "state" : {
-        "revision" : "cbb941a2009f92f221c310156fd8be65845be79d",
-        "version" : "0.3.0"
+        "revision" : "71cb3bf36a808534659d1248780c2bf3c4c4fc91",
+        "version" : "5.1.0"
       }
     }
   ],

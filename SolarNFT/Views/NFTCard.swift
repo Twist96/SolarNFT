@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct NFTCard: View {
+    var nft: NFT
+
     var body: some View {
         ZStack {
-            Image.ape
+            Image(nft.image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 150, height: 200)
 
             VStack(alignment: .leading) {
-                Text("10h 4m 19s")
+                Text(nft.createdAt, style: .relative)
                     .font(.roboto(size: 12))
                     .padding(EdgeInsets(top: 3, leading: 5, bottom: 4, trailing: 7))
                     .background(Color._gray2)
@@ -25,7 +30,7 @@ struct NFTCard: View {
 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack(spacing: 4) {
-                        Text("APE Club")
+                        Text(nft.image)
                         Image.verificationBadge
                     }
 
@@ -35,17 +40,17 @@ struct NFTCard: View {
                                 .font(.robotoMedium(size: 8))
                                 .foregroundColor(._gray)
 
-                            Text("92.2 ETH")
+                            Text("\(nft.floorPrice.roundUpString(1)) ETH")
                         }
 
                         Spacer()
 
                         VStack(alignment: .leading) {
-                            Text("FLOOR")
+                            Text("TOTAL VOLUME")
                                 .font(.robotoMedium(size: 8))
                                 .foregroundColor(._gray)
 
-                            Text("92.2 ETH")
+                            Text("\(nft.totalVolume.roundUpString(1)) ETH")
                         }
                     }
                 }
@@ -66,6 +71,6 @@ struct NFTCard: View {
 
 struct NFTCard_Previews: PreviewProvider {
     static var previews: some View {
-        NFTCard()
+        NFTCard(nft: NFT.fakeDataList[0])
     }
 }

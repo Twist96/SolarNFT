@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NFTDetailsView: View {
+    var nft: NFT
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var appState: AppState
 
@@ -19,7 +20,7 @@ struct NFTDetailsView: View {
 
             header
 
-            NFTLargeCard()
+            NFTLargeCard(nft: nft)
         }
         .navigationBarBackButtonHidden()
         .onAppear {
@@ -56,7 +57,7 @@ struct NFTDetailsView: View {
             }
 
             VStack(alignment: .leading, spacing: 10) {
-                Text("Luppy Club")
+                Text(nft.name)
                     .font(.exo2(size: 30))
 
                 HStack(alignment: .bottom) {
@@ -65,7 +66,7 @@ struct NFTDetailsView: View {
                         .frame(width: 26, height: 26)
                         .clipShape(Circle())
 
-                    Text("Alex S.")
+                    Text(nft.creator)
                 }
                 .padding(.leading, 10)
             }
@@ -178,7 +179,7 @@ struct NFTDetailsView: View {
 
 struct NFTDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        NFTDetailsView()
+        NFTDetailsView(nft: NFT.fakeDataList[0])
             .environmentObject(AppState())
     }
 }

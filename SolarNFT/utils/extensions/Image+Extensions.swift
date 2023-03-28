@@ -65,6 +65,6 @@ extension Image {
     }
 
     static var bear: Image {
-        Image("Bear")
+        Image("Luppy")
     }
 }

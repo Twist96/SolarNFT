@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct NFTLargeCard: View {
+    var nft: NFT
     @State var isLarge = false
     var topOffset = 160
 
     var body: some View {
         ZStack {
-            Image.bear
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .cornerRadius(40)
-                .ignoresSafeArea()
+            GeometryReader { proxy in
+                Image(nft.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .frame(width: proxy.size.width)
+                    .clipShape(RoundedRectangle(cornerRadius: 40))
+                    .ignoresSafeArea()
+            }
 
             VStack {
 
@@ -149,6 +153,6 @@ struct NFTLargeCard: View {
 
 struct NFTLargeCard_Previews: PreviewProvider {
     static var previews: some View {
-        NFTLargeCard()
+        NFTLargeCard(nft: NFT.fakeDataList[0])
     }
 }
